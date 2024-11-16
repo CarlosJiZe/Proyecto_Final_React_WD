@@ -1,0 +1,39 @@
+# 15/11/24
+Tasks Completed:
+- Initial Migration to React:
+    Migrated the index.js and its related content from EJS to React.
+    Implemented a functional structure for React with dynamic rendering of components using JSON files.
+
+- Navbar Implementation:
+    Created a fully functional Navbar using React-Bootstrap.
+    Integrated dropdown menus and navigation links that dynamically scroll to specific sections of the page.
+
+- Dynamic Rendering with JSON:
+    Converted hardcoded data in the original EJS files into structured JSON.
+    Ensured all dynamic content in the index page (e.g., sections, titles, and images) is rendered dynamically using reusable components.
+
+- Main Sections:
+    Developed reusable section components (Section, MainDescriptionSection, and GalleryCarousel) for the index page.
+    Successfully rendered the content of the Home page, including dynamic image galleries and descriptions.
+
+- Basic CSS Styling:
+    Adapted key CSS styles for React compatibility.
+    Styled the Navbar, carousel, and main sections to resemble the original design.
+
+Challenges Faced:
+
+- Dynamic Data Management:
+    Problem: Handling dynamic data while keeping components reusable and organized.
+    Solution: Structured the project to load content dynamically via JSON files, ensuring all components rely on props for data input.
+    Bootstrap Integration:
+
+    Problem: Ensuring React-Bootstrap components worked seamlessly with existing styles and functionality.
+    Solution: Verified correct imports for react-bootstrap components and adjusted custom styles to avoid conflicts.
+
+- Navigation and Routing:
+    Problem: Setting up smooth navigation between sections of the page using React-Router.
+    Solution: Successfully implemented routing for internal links, ensuring smooth scrolling and correct targeting.
+    Carousel Customization:
+
+    Problem: Styling the gallery carousel to match the original layout while keeping captions responsive.
+    Solution: Applied custom CSS to adjust image scaling, caption placement, and overall responsiveness.

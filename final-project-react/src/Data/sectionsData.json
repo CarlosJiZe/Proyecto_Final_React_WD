@@ -1,0 +1,124 @@
+[
+    {
+      "title": "Antecedentes histórico",
+      "image": {
+        "src": "/images/chapala-historico.jpg",
+        "alt": "Plano del lago de Chapala",
+        "caption": "Plano del Lago de Chapala de Don José María Narváez (Diciembre 1816). Lugar: Guadalajara, JAL. Fecha: Diciembre 1816. Autor: José María Narváez. Escala: Sin escala. Ubicación: MMOB, CMOB, Jalisco, V 01. No. de Control: 381. Fotógrafo: A. C. Técnica: Papel algodón sobre tela."
+      },
+      "description": [
+        "El espacio geográfico en el que se encuentra actualmente el lago de Chapala comenzó a conformarse hará unos cincuenta millones de años a través de fenómenos tales como levantamientos del suelo marino, fracturamientos, fallas y plegamientos de la corteza terrestre y un intenso vulcanismo.",
+        "Hace mucho tiempo, antes de cualquier presencia humana, el agua del lago de Chapala cubría una superficie considerablemente mayor a la históricamente conocida. La reducción de su vaso parece haberse debido a un deslizamiento bastante impresionante de capas serranas occidentales, que propició el derrame de su extremo suroeste. Levantamientos prosteriores clausuraron esa compuerta y obligaron la salida por el noreste cerca de Ocotlán, donde solía nacer naturalmente el río Santiago.",
+        "Toda la parte nororiente del lago de Chapala era la receptora de las descargas del Lerma y del Duero y al correr del tiempo fue la que quedó más azolvada. Otras zonas de azolves menores se localizan en las desembocaduras del río de La Pasión (que marca la frontera entre los estados de Jalisco y Michoacán) y en el extremo suroccidental entre San Luis Soyatlán y Jocotepec.",
+        "La cartografía revela dos épocas claramente diferenciadas en los contornos lacustres: una anterior a la construcción del bordo o dique de Maltaraña o vallado de Cuesta, la otra posterior a la desecación artificiosa de la zona conocida como Ciénega de Chapala en ese extremo nororiental azolvado del antiguo lago.",
+        "‘La capacidad de almacenamiento del lago era, antes de la Ciénega, un máximo de 5,600 Mm3 y se redujo a 4,500 Mm3. Con la presa de Poncitlán, construida en esa misma época, a principios del siglo XX, su capacidad volvió a subir hasta los 8,000 Mm3, como hoy en día. Se cambió superficie por volumen.’",
+        "La obra se realizó entre los años 1905 y 1910 a iniciativa del empresario y gobernador jaliciense Manuel Cuesta Gallardo y con la venia del Presidente Porfirio Díaz.",
+        "Este bordo, con una corona de cuatro metros y una altura de tres metros y medio, tenía un largo de cerca de veinte kilómetros desde La Palma hasta Jamay, atravesando el Lerma en Maltaraña; evitaría que las aguas del lago invadieran la parte de la Ciénega de Chapala.",
+        "El bordo dejó descubierta de agua una superficie de aproximadamente cincuenta mil hectáreas en la Ciénega y le restó al lago unos 856 millones de metros cúbicos de almacenamiento de agua."
+      ],
+      "accordions": [
+        {
+          "title": "Modificaciones",
+          "description": [
+            "El lago hasta la época de Porfirio Díaz tenía una superficie de 164,659 ha con un almacenamiento de 5,800 Mm³.",
+            "Sin embargo, en el periodo de 1902 a 1910 se abrieron al cultivo 50,000 ha: 45,000 en el estado de Michoacán y 5,000 en Jalisco, para tal efecto fue necesario encauzar el río Lerma desde la desembocadura del río Duero, afluente del río Lerma, hasta 10 Km dentro del lago partiendo de Maltaraña. Así como la construcción de un bordo en la ribera del lago, desde Jamay, Jalisco, hasta La Palma, Michoacán y la presa de Poncitlán.",
+            "Cabe señalar que la altura máxima del lago antes de estas obras era a la cota 94.76 m, o sea 1,520.76 msnm y una vez terminados los bordos se redujo la superficie del lago, pero no su volumen, ya que con la construcción de los bordos y la presa Poncitlán se incrementó su capacidad a la actual, de 7,897 Mm³.",
+            "Como nuevo lago, su almacenamiento máximo registrado desde 1900 a la fecha fue en septiembre de 1926, con 9,663 Mm³ (cota 99.33), el almacenamiento mínimo se registró en junio de 1955 con 954 Mm³ (cota 90.80) y el almacenamiento promedio en este periodo es de 5,463 Mm³ (cota 95.65)."
+          ]
+        }
+      ],
+    "id": "historicos"
+    },
+    {
+      "title": "Ubicación y dimensiones",
+      "image": {
+        "src": "/images/chapala-dimensiones.jpg",
+        "alt": "Imagen de las dimensiones del lago de Chapala"
+      },
+      "description": [
+        "Localizado al oriente del Estado de Jalisco y al noroeste del Estado de Michoacán, tiene una superficie máxima de 114,659 ha, de las cuales Jalisco ocupa el 86% y Michoacán el 14%.",
+        "Tiene un almacenamiento máximo, a la cota 97.80 (equivalente a 1,423.80 msnm) de 7,897 millones de metros cúbicos (Mm³). A esa misma cota, sus dimensiones extremas son de: 79 km de este a oeste y 28 km de norte a sur."
+      ],
+      "accordions": [
+        {
+          "title": "Cuenca hidrológica",
+          "description": [
+            "Forma parte de la Cuenca Lerma-Chapala-Santiago, cuenca que inicia al suroeste de la Ciudad de Toluca, con el nacimiento del Río Lerma, continúa su recorrido por el Estado de México en su porción noroeste, continúa como línea divisoria entre los estados de Querétaro y Michoacán, a través del Estado de Guanajuato, posteriormente se localiza en los límites de Jalisco, Michoacán y Guanajuato, para desembocar en el Lago Chapala, a través de un recorrido de aproximadamente 734 km.",
+            "En la parte noroeste del Lago de Chapala, cerca de la población de Ocotlán, nace el Río Santiago, el que después de recorrer 460 km a través de los estados de Jalisco y Nayarit, desemboca en el Océano Pacífico, cerca de la población de San Blas, en el Estado de Nayarit."
+          ]
+        }
+      ],
+    "id": "ubi-dim"
+    },
+    {
+      "title": "Batimetría",
+      "image": {
+        "src": "/images/Barimetria.png",
+        "alt": "Imagen de la batimetría del lago de Chapala"
+      },
+      "description": [
+        "La batimetría es correspondiente a la altimetría, considerando que esta ciencia mide las profundidades de un mar o lago como la altimetría da cuenta de la elevación de un terreno.",
+        "Un mapa batimétrico muestra la representación de la forma y profundidad del suelo en el fondo de un cuerpo de agua."
+      ],
+      "accordions": [
+        {
+          "title": "Métodos de levantamiento batimétrico",
+          "description": [
+            "Los primeros métodos de medición usaban una cuerda con lastre lanzada desde un barco para medir la profundidad en un punto dado. Los errores surgen, por ejemplo, de la imprecisión de la medida en la cuerda, de los movimientos del barco y las corrientes que arrastran la línea.",
+            "En la actualidad, se aprovechan las nuevas tecnologías, como un ecosonda (o sonar) montada en el barco y el sistema satelital de posicionamiento.",
+            "Además, existen sistemas que compensan el vaivén de la nave, generando un levantamiento batimétrico mucho más preciso."
+          ]
+        },
+        {
+          "title": "Levantamientos batimétricos del Lago de Chapala",
+          "description": [
+            "El primer levantamiento batimétrico del Lago de Chapala lo hizo el ingeniero Luis P. Ballesteros en 1929. El procedimiento fue por medio de una sonda lastrada, desde una lancha localizando topográficamente los puntos de sondeo. De los cuales se hicieron más de diez mil.",
+            "El segundo se efectuó por medio de sonar, lo que representó una gran rapidez y exactitud en el levantamiento hecho en 1970. Desafortunadamente, por errores de principio, los resultados fueron sustancialmente equivocados.",
+            "Un tercer levantamiento se efectuó, también por sonar en 1981, que se acerca al realizado por Ballesteros, arrojando valores de capacidad y área ligeramente mayores que los obtenidos en 1929."
+          ]
+        },
+        {
+          "title": "Batimetría en el Siglo XXI",
+          "description": [
+            "En el año 2000, se realiza el primer mapa batimétrico de este siglo, elaborado por la Comisión Nacional del Agua (CONAGUA) empleando para ello ecosondas y sistemas de posicionamiento global (GPS, por sus siglas en inglés), el más detallado hasta ahora."
+          ]
+        }
+      ],
+    "id": "batime"
+    },
+    {
+      "id": "gale",
+      "title": "Galería",
+      "images": [
+        {
+          "name": "lago1",
+          "description": "Lago rebasando el muelle"
+        },
+        {
+          "name": "lago2",
+          "description": "El Sol sobre el Lago"
+        },
+        {
+          "name": "lago3",
+          "description": "Faro y Lago a plenitud"
+        },
+        {
+          "name": "lago4",
+          "description": "Lago rebosante"
+        },
+        {
+          "name": "lago5",
+          "description": "Faro, 1960's"
+        },
+        {
+          "name": "lago6",
+          "description": "Faro del Lago de Chapala, 2003"
+        },
+        {
+          "name": "lago7",
+          "description": "Oleaje en el Lago de Chapala"
+        }
+      ]
+    }
+  ]
+  

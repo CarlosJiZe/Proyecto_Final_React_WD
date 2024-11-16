@@ -1,0 +1,30 @@
+.footer-container {
+    background-color: #20475f; /* Color de fondo */
+    color: #d9f0ff; /* Color del texto */
+    padding: 0 20px 20px; /* Espaciado superior e inferior */
+  }
+  
+  .footer-container h5 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .footer-container ul {
+    list-style: none; /* Elimina los puntos de lista */
+    padding: 0;
+  }
+  
+  .footer-container ul li {
+    margin-bottom: 5px;
+  }
+  
+  .footer-container ul li a {
+    text-decoration: none; /* Elimina el subrayado */
+    color: #d9f0ff; /* Color del texto */
+    transition: color 0.3s ease; /* Transición para hover */
+  }
+  
+  .footer-container ul li a:hover {
+    color: #e36397; /* Color al pasar el cursor */
+  }
+  
