@@ -1,17 +1,25 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import MainImageSection from './MainImageSection';
 import MainTitleSection from './MainTitleSection';
 import MainDescriptionSection from './MainDescriptionSection';
 import Section from './Section';
 import GalleryCarousel from './GalleryCarousel';
+import { useAppContext, setHomeSections } from '../Context/AppContextProvider';
 import sectionsData from '../Data/sectionsData';
 import './Home.css'; 
 
 const Home = () => {
+  const { state, dispatch } = useAppContext();
+
   const paragraphsMain = [
     "El Lago de Chapala, el lago más extenso del país, es la principal fuente de abastecimiento de agua de la Zona Conurbada de Guadalajara.",
     "El lago de Chapala tiene una capacidad total de 7,897 millones de metros cúbicos (Mm³) y una superficie de 114,659 hectáreas (ha), de las cuales el 86% pertenece al estado de Jalisco y el 14% a Michoacán. Es el lago más grande de la República Mexicana y la principal fuente de abastecimiento de agua potable para la Zona Metropolitana de Guadalajara, proporcionando el 60% del agua que llega a la ciudad."
   ];
+
+  useEffect(() => {
+    // Cargar las secciones dinámicas desde el JSON en el contexto
+    setHomeSections(dispatch, sectionsData);
+  }, [dispatch]);
 
   return (
     <div className="cont-prin container-fluid" id="lago-cha">
@@ -25,7 +33,7 @@ const Home = () => {
       <MainDescriptionSection paragraphs={paragraphsMain} />
 
       {/* Renderizado de Secciones Dinámicas */}
-      {sectionsData.map((section, index) => {
+      {state.homeSections.map((section, index) => {
         if (section.id === "gale") {
           // Si la sección es la galería, renderiza el carrusel
           return (

@@ -5,11 +5,13 @@ import Home from './Components/Home';
 import Footer from './Components/Footer';
 import Graficas from './Components/Graficas';
 import Datos from './Components/Datos';
+import AppContextProvider from './Context/AppContextProvider';
 import './App.css';
 
 
 function App() {
   return (
+    <AppContextProvider>
     <div className="App">
       <NavbarComponent />
       <Routes>
@@ -25,6 +27,7 @@ function App() {
       <Footer />
 
     </div>
+    </AppContextProvider>
   );
 }
 
