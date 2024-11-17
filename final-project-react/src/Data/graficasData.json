@@ -1,0 +1,56 @@
+[
+    {
+      "id": "nivel-actual",
+      "title": "Niveles actual",
+      "image": {
+        "src": "/images/Nivel.png",
+        "alt": "Nivel actual del lago de Chapala",
+        "caption": "Cota diaria del Lago de Chapala",
+        "className": "grafic"
+      },
+      "description": [
+        "La gráfica muestra la evolución de los niveles del Lago de Chapala en metros sobre el nivel del mar (msnm) en diferentes años, destacando las fluctuaciones en su capacidad hídrica."
+      ]
+    },
+    {
+      "id": "Cota",
+      "title": "Cota",
+      "image": {
+        "src": "/images/Volumen.png",
+        "alt": "Cota del lago de Chapala",
+        "caption": "Tendencia de la cota del Lago de Chapala en los últimos 15 días",
+        "className": "grafic"
+      },
+      "description": [
+        "La gráfica muestra la evolución de la cota del Lago de Chapala durante un período de 15 días, reflejando tanto los valores observados (línea azul) como la tendencia estimada (línea verde)."
+      ]
+    },
+    {
+      "id": "Volumen",
+      "title": "Volumen",
+      "image": {
+        "src": "/images/Cota.png",
+        "alt": "Gráfica de distribución del uso del agua del lago de Chapala",
+        "caption": "Volumen del Lago de Chapala",
+        "className": "grafic"
+      },
+      "description": [
+        "La gráfica ilustra el volumen actual del Lago de Chapala en relación con su capacidad total."
+      ]
+    },
+    {
+      "id": "Comportamiento",
+      "title": "Comportamiento",
+      "image": {
+        "src": "/images/Comportamiento.png",
+        "alt": "Gráfica del impacto climático en el lago de Chapala",
+        "caption": "Comportamiento del Lago de Chapala",
+        "className": "grafic"
+      },
+      "description": [
+        "La gráfica compara el comportamiento del volumen del Lago de Chapala a lo largo de los años 2022, 2023 y 2024. Cada curva muestra las fluctuaciones anuales en millones de metros cúbicos (Mm³), destacando los cambios estacionales y las tendencias en la capacidad del lago."
+      ]
+    }
+  ]
+  
+  

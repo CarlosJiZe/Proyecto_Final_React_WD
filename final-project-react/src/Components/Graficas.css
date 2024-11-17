@@ -1,0 +1,16 @@
+.grafic{
+    width: 50% !important;
+    height: 400px !important;
+    margin-left: 25%;
+    margin-right: 25%; 
+}
+
+@media (max-width: 768px) {
+    .grafic {
+      width: 90% !important;
+      height: auto !important;
+      margin-left: 5%;
+      margin-right: 5%;
+      object-fit: contain; /* Ajusta la imagen sin cortarla */
+    }
+  }

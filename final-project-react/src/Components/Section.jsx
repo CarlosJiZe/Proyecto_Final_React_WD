@@ -13,6 +13,7 @@ const Section = (props) => {
         src={props.image.src}
         alt={props.image.alt}
         caption={props.image.caption}
+        className={props.image.className}
       />
       <MainDescriptionSection paragraphs={props.description} />
 

@@ -1,0 +1,21 @@
+.table-responsive {
+    overflow-x: auto;
+    white-space: nowrap; /* Evita que las celdas se rompan en varias líneas */
+}
+
+.table {
+    width: 100%;
+    table-layout: auto; /* Ajuste de la tabla según el contenido */
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.table thead th {
+    background-color: #343a40;
+    color: #fff;
+}

@@ -4,7 +4,8 @@
       "image": {
         "src": "/images/chapala-historico.jpg",
         "alt": "Plano del lago de Chapala",
-        "caption": "Plano del Lago de Chapala de Don José María Narváez (Diciembre 1816). Lugar: Guadalajara, JAL. Fecha: Diciembre 1816. Autor: José María Narváez. Escala: Sin escala. Ubicación: MMOB, CMOB, Jalisco, V 01. No. de Control: 381. Fotógrafo: A. C. Técnica: Papel algodón sobre tela."
+        "caption": "Plano del Lago de Chapala de Don José María Narváez (Diciembre 1816). Lugar: Guadalajara, JAL. Fecha: Diciembre 1816. Autor: José María Narváez. Escala: Sin escala. Ubicación: MMOB, CMOB, Jalisco, V 01. No. de Control: 381. Fotógrafo: A. C. Técnica: Papel algodón sobre tela.",
+        "className": "imgp"
       },
       "description": [
         "El espacio geográfico en el que se encuentra actualmente el lago de Chapala comenzó a conformarse hará unos cincuenta millones de años a través de fenómenos tales como levantamientos del suelo marino, fracturamientos, fallas y plegamientos de la corteza terrestre y un intenso vulcanismo.",
@@ -33,7 +34,8 @@
       "title": "Ubicación y dimensiones",
       "image": {
         "src": "/images/chapala-dimensiones.jpg",
-        "alt": "Imagen de las dimensiones del lago de Chapala"
+        "alt": "Imagen de las dimensiones del lago de Chapala",
+        "className": "imgp"
       },
       "description": [
         "Localizado al oriente del Estado de Jalisco y al noroeste del Estado de Michoacán, tiene una superficie máxima de 114,659 ha, de las cuales Jalisco ocupa el 86% y Michoacán el 14%.",
@@ -54,7 +56,8 @@
       "title": "Batimetría",
       "image": {
         "src": "/images/Barimetria.png",
-        "alt": "Imagen de la batimetría del lago de Chapala"
+        "alt": "Imagen de la batimetría del lago de Chapala",
+        "className": "imgp"
       },
       "description": [
         "La batimetría es correspondiente a la altimetría, considerando que esta ciencia mide las profundidades de un mar o lago como la altimetría da cuenta de la elevación de un terreno.",
