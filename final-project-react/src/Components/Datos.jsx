@@ -1,36 +1,44 @@
 import React, { useEffect } from 'react';
 import { useAppContext, setTableData, setPagination } from '../Context/AppContextProvider';
-import datos from '../Data/presas_jal_ldcjl_lago_de_chapala_almacenamiento_historico_2024-08-01.json'; // Importa el JSON directamente
+import axios from 'axios';
 import './Datos.css';
 
 const Datos = ({ rowsPerPage = 100 }) => {
   const { state, dispatch } = useAppContext();
 
-  const totalPages = Math.ceil(state.tableData.length / rowsPerPage);
+  const totalPages = state.pagination.totalPages || 1; // Total de páginas
   const maxVisiblePages = 5; // Máximo número de páginas visibles
 
-  useEffect(() => {
-    // Cargar los datos de la tabla al contexto global
-    setTableData(dispatch, datos);
-
-    // Configurar la paginación solo si no está configurada aún
-    if (state.pagination.rowsPerPage !== rowsPerPage) {
+  // Función para cargar datos desde el backend
+  const fetchData = async (page = 1) => {
+    try {
+      const response = await axios.get(`http://localhost:3002/api/datos?page=${page}&limit=${rowsPerPage}`);
+      const fetchedData = response.data.data.map((row) => ({
+        ...row,
+        fecha: new Date(row.fecha).toLocaleDateString(), // Formatea la fecha
+      }));
+      setTableData(dispatch, fetchedData); // Actualiza `tableData` con los datos formateados
       setPagination(dispatch, {
         ...state.pagination,
-        rowsPerPage,
+        currentPage: response.data.currentPage, // Actualiza la página actual
+        totalPages: response.data.totalPages,  // Total de páginas desde la respuesta
+        rowsPerPage: rowsPerPage,
       });
+    } catch (error) {
+      console.error('Error al obtener los datos del backend:', error);
     }
+  };
+
+  useEffect(() => {
+    // Cargar la primera página al montar el componente
+    fetchData();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [dispatch, datos, rowsPerPage]);
+  }, [dispatch, rowsPerPage]);
 
-  // Obtener datos paginados
-  const paginatedData = state.tableData.slice(
-    (state.pagination.currentPage - 1) * state.pagination.rowsPerPage,
-    state.pagination.currentPage * state.pagination.rowsPerPage
-  );
-
+  // Manejar cambio de página
   const handlePageChange = (page) => {
-    setPagination(dispatch, { ...state.pagination, currentPage: page });
+    fetchData(page); // Solicitar datos de la nueva página
+    setPagination(dispatch, { ...state.pagination, currentPage: page }); // Actualizar el estado de la paginación
   };
 
   // Calcular el rango de páginas visibles
@@ -59,15 +67,19 @@ const Datos = ({ rowsPerPage = 100 }) => {
           <thead className="thead-dark">
             <tr>
               {state.tableData.length > 0 &&
-                Object.keys(state.tableData[0]).map((key) => <th key={key}>{key}</th>)}
+                Object.keys(state.tableData[0])
+                  .filter((key) => key !== '_id' && key !== '__v') // Excluir columnas no deseadas
+                  .map((key) => <th key={key}>{key}</th>)}
             </tr>
           </thead>
           <tbody>
-            {paginatedData.map((row, index) => (
+            {state.tableData.map((row, index) => (
               <tr key={index}>
-                {Object.values(row).map((value, i) => (
-                  <td key={i}>{value}</td>
-                ))}
+                {Object.entries(row)
+                  .filter(([key]) => key !== '_id' && key !== '__v') // Excluir columnas no deseadas
+                  .map(([key, value], i) => (
+                    <td key={i}>{value}</td>
+                  ))}
               </tr>
             ))}
           </tbody>
@@ -137,6 +149,11 @@ const Datos = ({ rowsPerPage = 100 }) => {
 };
 
 export default Datos;
+
+
+
+
+
 
 
 
