@@ -3,6 +3,8 @@ import { useAppContext, setTableData, setPagination } from '../Context/AppContex
 import axios from 'axios';
 import './Datos.css';
 
+const API_BASE_URL = process.env.REACT_APP_API_BASE_URL;
+
 const Datos = ({ rowsPerPage = 100 }) => {
   const { state, dispatch } = useAppContext();
 
@@ -12,7 +14,7 @@ const Datos = ({ rowsPerPage = 100 }) => {
   // Función para cargar datos desde el backend
   const fetchData = async (page = 1) => {
     try {
-      const response = await axios.get(`http://localhost:3002/api/datos?page=${page}&limit=${rowsPerPage}`);
+      const response = await axios.get(`${API_BASE_URL}/api/datos?page=${page}&limit=${rowsPerPage}`);
       const fetchedData = response.data.data.map((row) => ({
         ...row,
         fecha: new Date(row.fecha).toLocaleDateString(), // Formatea la fecha
