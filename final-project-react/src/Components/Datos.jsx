@@ -85,8 +85,8 @@ const Datos = ({ rowsPerPage = 100 }) => {
         </div>
         {/* Botón para descargar archivo */}
         <div className="download-section">
-      <button className="btn btn-primary" onClick={handleDownload}>
-        Descargar Datos
+      <button className="btn btn-primary btn-circle" onClick={handleDownload}>
+        <i className='fas fa-download'></i>
       </button>
 
       {/* Modal de confirmación */}

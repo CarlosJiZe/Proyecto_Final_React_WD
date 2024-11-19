@@ -23,3 +23,30 @@
 .CuadroConfirmacion {
     color: red;
 }
+
+.btn-circle {
+    position: fixed; /* Fija el botón en la pantalla */
+    bottom: 20px; /* 20px desde el borde inferior */
+    right: 20px; /* 20px desde el borde izquierdo */
+    width: 70px; /* Tamaño del botón */
+    height: 70px; /* Tamaño del botón */
+    padding: 0; /* Elimina el padding */
+    border-radius: 50%; /* Hace el botón circular */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px; /* Tamaño del ícono */
+    border: none; /* Elimina el borde */
+    background-color: #007bff; /* Color azul de fondo */
+    color: white; /* Color blanco para el ícono */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-circle:hover {
+    background-color: #0056b3; /* Color de fondo cuando el mouse pasa por encima */
+  }
+  
+  .fas {
+    color: white; /* Color blanco para el ícono */
+  }
