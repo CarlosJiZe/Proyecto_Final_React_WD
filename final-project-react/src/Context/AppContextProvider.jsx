@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useReducer } from "react";
 import AppReducer from "./AppReducer";
-import { SET_HOME_SECTIONS, SET_GRAPH_DATA, SET_TABLE_DATA, SET_PAGINATION } from "./actions";
+import { SET_HOME_SECTIONS, SET_GRAPH_DATA, SET_TABLE_DATA, SET_PAGINATION,showModal,hideModal } from "./actions";
 
 const AppContext = createContext();
 
@@ -13,12 +13,13 @@ function AppContextProvider({ children }) {
             currentPage: 1,
             rowsPerPage: 10,
         },
+        isModalVisible: false, // Estado para controlar la visibilidad del modal
     };
 
     const [state, dispatch] = useReducer(AppReducer, initialState);
 
     return (
-        <AppContext.Provider value={{ state, dispatch }}>
+        <AppContext.Provider value={{ state, dispatch ,showModal,hideModal}}>
             {children}
         </AppContext.Provider>
     );

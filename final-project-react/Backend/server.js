@@ -2,6 +2,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const fs = require("fs");
 const cors = require("cors");
+const path = require('path');
 require("dotenv").config();
 
 const app = express();
@@ -89,6 +90,11 @@ app.get("/api/datos", async (req, res) => {
     console.error("Error al obtener los datos:", err);
     res.status(500).json({ error: "Error al obtener los datos." });
   }
+});
+
+app.get('/download/presas-jal', (req, res) => {
+  const filePath = path.join(__dirname, 'data/presas_jal_ldcjl_lago_de_chapala_almacenamiento_historico_2024-08-01.json');
+  res.download(filePath, 'presas_jal_ldcjl.json'); // Nombre del archivo al descargar
 });
 
 // Iniciar servidor

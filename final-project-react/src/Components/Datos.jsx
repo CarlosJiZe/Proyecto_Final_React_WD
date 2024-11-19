@@ -2,11 +2,12 @@ import React, { useEffect } from 'react';
 import { useAppContext, setTableData, setPagination } from '../Context/AppContextProvider';
 import axios from 'axios';
 import './Datos.css';
+import { Modal, Button } from 'react-bootstrap';
 
 const API_BASE_URL = process.env.REACT_APP_API_BASE_URL;
 
 const Datos = ({ rowsPerPage = 100 }) => {
-  const { state, dispatch } = useAppContext();
+  const { state, dispatch, showModal, hideModal} = useAppContext();
 
   const totalPages = state.pagination.totalPages || 1; // Total de páginas
   const maxVisiblePages = 5; // Máximo número de páginas visibles
@@ -52,6 +53,26 @@ const Datos = ({ rowsPerPage = 100 }) => {
     return Array.from({ length: endPage - adjustedStartPage + 1 }, (_, i) => adjustedStartPage + i);
   };
 
+  const handleDownload = () => {
+    // Muestra el modal de confirmación
+    showModal(dispatch);
+  };
+
+  const handleConfirmDownload = () => {
+    // Aquí inicias la descarga
+    const link = document.createElement('a');
+    link.href = '/data/presas_jal_ldcjl_lago_de_chapala_almacenamiento_historico_2024-08-01.json'; // Ruta del archivo
+    link.download = 'datos.csv'; // Nombre del archivo
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    hideModal(dispatch); // Oculta el modal después de la descarga
+  };
+
+  const handleClose = () => {
+    hideModal(dispatch); // Cierra el modal sin hacer nada
+  };
+
   return (
     <div className="datos-section">
       <div className="section">
@@ -62,6 +83,28 @@ const Datos = ({ rowsPerPage = 100 }) => {
             En esta sección se pueden consultar los datos utilizados en las Gráficas.
           </p>
         </div>
+        {/* Botón para descargar archivo */}
+        <div className="download-section">
+      <button className="btn btn-primary" onClick={handleDownload}>
+        Descargar Datos
+      </button>
+
+      {/* Modal de confirmación */}
+      <Modal className='CuadroConfirmacion' show={state.isModalVisible} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>Confirmar descarga</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>¿Estás seguro de que deseas descargar el archivo?</Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose}>
+            Cancelar
+          </Button>
+          <Button variant="primary" onClick={handleConfirmDownload}>
+            Sí, descargar
+          </Button>
+        </Modal.Footer>
+      </Modal>
+    </div>
       </div>
       {/* Tabla de datos */}
       <div className="table-responsive">
