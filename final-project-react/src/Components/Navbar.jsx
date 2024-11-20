@@ -2,6 +2,7 @@ import React from 'react';
 import { Navbar, Nav, NavDropdown, Container } from 'react-bootstrap';
 import { useNavigate, useLocation } from 'react-router-dom';
 import './Navbar.css';
+import Weather from './API';
 
 const NavbarComponent = () => {
   const navigate = useNavigate();
@@ -31,6 +32,7 @@ const NavbarComponent = () => {
             style={{ height: '50px' }}
           />
         </Navbar.Brand>
+        <Weather/>
         <Navbar.Toggle aria-controls="navbarNavDropdown" />
         <Navbar.Collapse id="navbarNavDropdown">
           <Nav className="ms-auto">

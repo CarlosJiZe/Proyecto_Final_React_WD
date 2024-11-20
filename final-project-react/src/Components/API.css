@@ -1,0 +1,28 @@
+/* Weather.css */
+
+.weather-container {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    color: black;
+    background-color: green;
+    border-radius: 5%;
+    padding: 20px;/* Añadido para darle un tamaño al contenedor */
+    margin: 0 auto; /* Centrado el contenedor en la página */
+  }
+  
+  .weather-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Espacio entre la temperatura y el icono */
+  }
+  
+  .temperature {
+    font-size: 1rem; /* Asegura que el texto sea más grande y legible */
+  }
+  
+  .weather-icon {
+    width: 50px;
+    height: 50px;
+  }
+  
