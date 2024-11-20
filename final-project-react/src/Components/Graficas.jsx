@@ -4,6 +4,7 @@ import MainDescriptionSection from './MainDescriptionSection';
 import { useAppContext, setGraphData } from '../Context/AppContextProvider';
 import graficasData from '../Data/graficasData.json';
 import './Graficas.css';
+import Grafs from './Grafs';
 
 const Graficas = () => {
   const { state, dispatch } = useAppContext();
@@ -17,6 +18,7 @@ const Graficas = () => {
     <div className="graficas-section container-fluid">
       <br />
       <h1>Gráficas</h1>
+      <Grafs/>
       {state.graphData.map((section) => (
         <div key={section.id} id={section.id} className="graficas-subsection">
           <hr className="custom-hr" />
