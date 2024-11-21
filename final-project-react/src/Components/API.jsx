@@ -5,7 +5,7 @@ const Weather = () => {
     const [weatherData, setWeatherData] = useState(null);
     const [error, setError] = useState(null);
   
-    const API_KEY = 'ea3040532d8548ad6157576f1a78cd2a'; // Tu clave API
+    const API_KEY = process.env.REACT_APP_API_WEATHER_KEY; // Tu clave API
   
     const search = async (city) => {
       try {
