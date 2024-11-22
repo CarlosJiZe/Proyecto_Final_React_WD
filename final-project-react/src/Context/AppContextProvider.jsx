@@ -50,13 +50,13 @@ function setPagination(dispatch, pagination) {
     // Función para manejar el login
     async function login(dispatch, user) {
         try {
-            const res = await fetch("/api/login", {
+            const res = await fetch(`${process.env.REACT_APP_API_BASE_URL}/api/login`, {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ user }),
             });
             const data = await res.json();
-
+    
             if (data.status_code === 1) {
                 dispatch({ type: LOGIN, payload: { user: data.user } });
             } else {
