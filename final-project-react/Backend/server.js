@@ -97,6 +97,28 @@ app.get('/download/presas-jal', (req, res) => {
   res.download(filePath, 'presas_jal_ldcjl.json'); // Nombre del archivo al descargar
 });
 
+// Lista de usuarios autorizados
+const authorizedUsers = ["Adam", "Betty", "Charlie", "Daisy", "Eve"];
+
+// Ruta para manejar el login
+app.post("/api/login", (req, res) => {
+    const user = req.body.user;
+
+    let authentication = {
+        user,
+        status: "Unauthorized",
+        status_code: -1,
+    };
+
+    // Verifica si el usuario está autorizado
+    if (authorizedUsers.includes(user)) {
+        authentication.status = "Authorized";
+        authentication.status_code = 1;
+    }
+
+    res.json(authentication);
+});
+
 // Iniciar servidor
 const PORT = process.env.PORT || 3002;
 app.listen(PORT, () => console.log(`Servidor corriendo en el puerto ${PORT}`));
