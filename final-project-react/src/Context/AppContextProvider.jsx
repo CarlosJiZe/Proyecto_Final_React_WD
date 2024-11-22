@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useReducer } from "react";
 import AppReducer from "./AppReducer";
-import { SET_HOME_SECTIONS, SET_GRAPH_DATA, SET_TABLE_DATA, SET_PAGINATION,showModal,hideModal } from "./actions";
+import { SET_HOME_SECTIONS, SET_GRAPH_DATA, SET_TABLE_DATA, SET_PAGINATION,showModal,hideModal, LOGIN,LOGOUT } from "./actions";
 
 const AppContext = createContext();
 
@@ -47,5 +47,30 @@ function setPagination(dispatch, pagination) {
     dispatch({ type: SET_PAGINATION, payload: pagination });
 }
 
+    // Función para manejar el login
+    async function login(dispatch, user) {
+        try {
+            const res = await fetch("/api/login", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ user }),
+            });
+            const data = await res.json();
+
+            if (data.status_code === 1) {
+                dispatch({ type: LOGIN, payload: { user: data.user } });
+            } else {
+                console.error("Error de autenticación:", data.status);
+            }
+        } catch (error) {
+            console.error("Error al intentar iniciar sesión:", error.message);
+        }
+    }
+
+    // Función para manejar el logout
+    function logout(dispatch) {
+        dispatch({ type: LOGOUT });
+    }
+
 export default AppContextProvider;
-export { useAppContext, setHomeSections, setGraphData, setTableData, setPagination };
+export { useAppContext, setHomeSections, setGraphData, setTableData, setPagination, login, logout };

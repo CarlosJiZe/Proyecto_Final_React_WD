@@ -44,5 +44,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "proxy": "http://localhost:3002",
+  "devDependencies": {
+    "concurrently": "^9.1.0"
   }
 }

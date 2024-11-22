@@ -4,6 +4,8 @@ export const SET_TABLE_DATA = "SET_TABLE_DATA";
 export const SET_PAGINATION = "SET_PAGINATION";
 export const SHOW_MODAL = 'SHOW_MODAL';
 export const HIDE_MODAL = 'HIDE_MODAL';
+export const LOGIN = 'LOGIN';
+export const LOGOUT = 'LOGOUT';
 
 export const showModal = (dispatch) => {
     dispatch({ type: SHOW_MODAL });

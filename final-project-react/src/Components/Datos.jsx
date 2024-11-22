@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { useAppContext, setTableData, setPagination } from '../Context/AppContextProvider';
+import { useAppContext, setTableData, setPagination, login, logout  } from '../Context/AppContextProvider';
 import axios from 'axios';
 import './Datos.css';
 import { Modal, Button } from 'react-bootstrap';
@@ -33,10 +33,12 @@ const Datos = ({ rowsPerPage = 100 }) => {
   };
 
   useEffect(() => {
-    // Cargar la primera página al montar el componente
-    fetchData();
+    // Cargar la primera página solo si el usuario está autenticado
+    if (state.isLoggedIn) {
+      fetchData();
+    }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [dispatch, rowsPerPage]);
+  }, [dispatch, rowsPerPage, state.isLoggedIn]);
 
   // Manejar cambio de página
   const handlePageChange = (page) => {
@@ -73,6 +75,33 @@ const Datos = ({ rowsPerPage = 100 }) => {
     hideModal(dispatch); // Cierra el modal sin hacer nada
   };
 
+  // Manejar login y logout
+  const handleLogin = async () => {
+    await login(dispatch, 'Adam'); // Usuario fijo de ejemplo
+  };
+
+  const handleLogout = () => {
+    logout(dispatch);
+  };
+
+  if (!state.isLoggedIn) {
+    return (
+      <div className="datos-section">
+        <div className="section">
+          <h1>Datos</h1>
+          <div className="textDecr">
+            <p className="princ">
+              Para acceder a los datos, debes iniciar sesión.
+            </p>
+          </div>
+          <button className="btn btn-primary" onClick={handleLogin}>
+            Iniciar Sesión
+          </button>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="datos-section">
       <div className="section">
@@ -85,26 +114,26 @@ const Datos = ({ rowsPerPage = 100 }) => {
         </div>
         {/* Botón para descargar archivo */}
         <div className="download-section">
-      <button className="btn btn-primary btn-circle" onClick={handleDownload}>
-        <i className='fas fa-download'></i>
-      </button>
+          <button className="btn btn-primary btn-circle" onClick={handleDownload}>
+            <i className='fas fa-download'></i>
+          </button>
 
-      {/* Modal de confirmación */}
-      <Modal className='CuadroConfirmacion' show={state.isModalVisible} onHide={handleClose}>
-        <Modal.Header closeButton>
-          <Modal.Title>Confirmar descarga</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>¿Estás seguro de que deseas descargar el archivo?</Modal.Body>
-        <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
-            Cancelar
-          </Button>
-          <Button variant="primary" onClick={handleConfirmDownload}>
-            Sí, descargar
-          </Button>
-        </Modal.Footer>
-      </Modal>
-    </div>
+          {/* Modal de confirmación */}
+          <Modal className='CuadroConfirmacion' show={state.isModalVisible} onHide={handleClose}>
+            <Modal.Header closeButton>
+              <Modal.Title>Confirmar descarga</Modal.Title>
+            </Modal.Header>
+            <Modal.Body>¿Estás seguro de que deseas descargar el archivo?</Modal.Body>
+            <Modal.Footer>
+              <Button variant="secondary" onClick={handleClose}>
+                Cancelar
+              </Button>
+              <Button variant="primary" onClick={handleConfirmDownload}>
+                Sí, descargar
+              </Button>
+            </Modal.Footer>
+          </Modal>
+        </div>
       </div>
       {/* Tabla de datos */}
       <div className="table-responsive">
@@ -189,11 +218,15 @@ const Datos = ({ rowsPerPage = 100 }) => {
           )}
         </ul>
       </nav>
+      <button className="btn btn-danger" onClick={handleLogout}>
+        Cerrar Sesión
+      </button>
     </div>
   );
 };
 
 export default Datos;
+
 
 
 

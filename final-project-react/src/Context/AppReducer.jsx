@@ -1,4 +1,4 @@
-import { SET_HOME_SECTIONS, SET_GRAPH_DATA, SET_TABLE_DATA, SET_PAGINATION, SHOW_MODAL, HIDE_MODAL } from "./actions";
+import { SET_HOME_SECTIONS, SET_GRAPH_DATA, SET_TABLE_DATA, SET_PAGINATION, SHOW_MODAL, HIDE_MODAL, LOGIN,LOGOUT } from "./actions";
 
 function AppReducer(state, action) {
     switch (action.type) {
@@ -32,6 +32,19 @@ function AppReducer(state, action) {
                 ...state,
                 isModalVisible: false, // Ocultar el modal
             };
+        case LOGIN:
+            return {
+                ...state,
+                isLoggedIn: true,
+                user: action.payload.user, // Guardar el usuario autenticado
+                };
+            
+        case LOGOUT:
+            return {
+                ...state,
+                isLoggedIn: false,
+                user: null, // Limpiar el usuario
+                };
         default:
             throw new Error(`Unsupported action type: ${action.type}`);
     }
