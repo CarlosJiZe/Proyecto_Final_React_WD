@@ -91,6 +91,16 @@ app.get("/api/datos", async (req, res) => {
     res.status(500).json({ error: "Error al obtener los datos." });
   }
 });
+// Ruta para obtener todos los datos
+app.get('/api/datos/all', async (req, res) => {
+  try {
+    const datos = await Lago.find(); // Obtén todos los registros
+    res.json({ data: datos });
+  } catch (error) {
+    res.status(500).json({ message: 'Error al obtener los datos', error });
+  }
+});
+
 
 app.get('/download/presas-jal', (req, res) => {
   const filePath = path.join(__dirname, 'data/presas_jal_ldcjl_lago_de_chapala_almacenamiento_historico_2024-08-01.json');
