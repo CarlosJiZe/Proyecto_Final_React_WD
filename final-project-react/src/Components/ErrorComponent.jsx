@@ -8,7 +8,7 @@ function FaultyComponent() {
   }
 
   return (
-    <div style={{ padding: "20px", border: "1px solid #ccc" }}>
+    <div>
         <button
         style={{
           padding: "10px 20px",

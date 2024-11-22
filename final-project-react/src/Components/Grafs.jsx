@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { Bar, Line, Doughnut } from 'react-chartjs-2';  // Cambiado de Pie a Doughnut
 import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend, RadialLinearScale, PointElement, LineElement, ArcElement } from 'chart.js';
 import './Grafs.css';
-import { setGraphData,useAppContext } from '../Context/AppContextProvider';
 
 // Registramos los componentes de Chart.js necesarios
 ChartJS.register(

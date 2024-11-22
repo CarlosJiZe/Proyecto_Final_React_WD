@@ -17,7 +17,6 @@ function App() {
     <div className="App">
     <ErrorBoundary>
       <NavbarComponent />
-      <FaultyComponent/>
       <Routes>
         {/* Ruta raíz para Home */}
         <Route exact path="/" element={<Home />} />
@@ -28,7 +27,9 @@ function App() {
         {/* Ruta para Datos */}
         <Route path="/datos" element={<Datos rowsPerPage={100} />} />
       </Routes>
-      <Footer />
+      <Footer/>
+      <FaultyComponent/>
+      
     </ErrorBoundary>
     </div>
     </AppContextProvider>
