@@ -6,6 +6,7 @@ export const SHOW_MODAL = 'SHOW_MODAL';
 export const HIDE_MODAL = 'HIDE_MODAL';
 export const LOGIN = 'LOGIN';
 export const LOGOUT = 'LOGOUT';
+export const SET_ALL_DATA = 'SET_ALL_DATA';
 
 export const showModal = (dispatch) => {
     dispatch({ type: SHOW_MODAL });

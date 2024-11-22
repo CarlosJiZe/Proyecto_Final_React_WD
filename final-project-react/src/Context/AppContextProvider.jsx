@@ -14,6 +14,7 @@ function AppContextProvider({ children }) {
             rowsPerPage: 10,
         },
         isModalVisible: false, // Estado para controlar la visibilidad del modal
+        allData: [], // Nuevo estado para todos los datos
     };
 
     const [state, dispatch] = useReducer(AppReducer, initialState);
@@ -71,6 +72,11 @@ function setPagination(dispatch, pagination) {
     function logout(dispatch) {
         dispatch({ type: LOGOUT });
     }
+    //Función para all data
+    const setAllData = (dispatch, allData) => {
+        dispatch({ type: 'SET_ALL_DATA', payload: allData });
+      };
+      
 
 export default AppContextProvider;
-export { useAppContext, setHomeSections, setGraphData, setTableData, setPagination, login, logout };
+export { useAppContext, setHomeSections, setGraphData, setTableData, setPagination, login, logout, setAllData };

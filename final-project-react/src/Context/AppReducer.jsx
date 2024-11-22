@@ -1,4 +1,4 @@
-import { SET_HOME_SECTIONS, SET_GRAPH_DATA, SET_TABLE_DATA, SET_PAGINATION, SHOW_MODAL, HIDE_MODAL, LOGIN,LOGOUT } from "./actions";
+import { SET_HOME_SECTIONS, SET_GRAPH_DATA, SET_TABLE_DATA, SET_PAGINATION, SHOW_MODAL, HIDE_MODAL, LOGIN,LOGOUT, SET_ALL_DATA } from "./actions";
 
 function AppReducer(state, action) {
     switch (action.type) {
@@ -45,6 +45,12 @@ function AppReducer(state, action) {
                 isLoggedIn: false,
                 user: null, // Limpiar el usuario
                 };
+        case SET_ALL_DATA:
+            return {
+                ...state,
+                allData: action.payload,
+                };
+                  
         default:
             throw new Error(`Unsupported action type: ${action.type}`);
     }
