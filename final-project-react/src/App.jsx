@@ -3,7 +3,7 @@ import { Routes, Route} from 'react-router-dom';
 import NavbarComponent from './Components/Navbar';
 import Home from './Components/Home';
 import Footer from './Components/Footer';
-import Graficas from './Components/Graficas';
+import Grafs from './Components/Grafs';
 import Datos from './Components/Datos';
 import AppContextProvider from './Context/AppContextProvider';
 import FaultyComponent from './Components/ErrorComponent';
@@ -22,7 +22,7 @@ function App() {
         <Route exact path="/" element={<Home />} />
         
         {/* Ruta para Graficas */}
-        <Route path="/graficas" element={<Graficas />} />
+        <Route path="/graficas" element={<Grafs />} />
         
         {/* Ruta para Datos */}
         <Route path="/datos" element={<Datos rowsPerPage={100} />} />
