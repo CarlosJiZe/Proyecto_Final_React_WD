@@ -104,6 +104,30 @@ to ensure the page continued to look good,
 
  ##### Final deliverable #####
 
+ For the final deliverable I help my team adding some of the part of the page that were in the ejs to the react enviroment, and adding extra things of react to the page.
+
+ Task Completed:
+ I implement the download button using react and the context enviroment variables.
+
+ Task Completed: 
+ implementing new grafics where the data is coming from our database, using the react Grafs component
+
+ Task Completed: 
+ Adding an error handling page, so when an error happends the page shows this page with information about the error.
+
+ Personal Reflection: 
+ In this part of the proyect I feel i was more involved that ever, and my teamates help a lot with things i didnt understand or I cant implement in the webpage
+ also it was a challenge to understand the context part for me but I think I manage to overcome the problems that this part generate me to complete the components
+ of the webpage
+
+ Performance Evaluation:
+ I think my performance was good not the best but I do more commits to the project in comparison to the other deliverables, so I believe I did great and my contributions
+ were good to the project.
+
+ Reflection On Teammates:
+ As always, my teammates did a great job, from Carlos taking on the whole backend and Andres helping to style the page. And the great dynamic we had as a team was evident
+since there were no problems beyond bugs or compilation errors.
+
 
  #Pesonal log: Andres Gonzalez Gomez
 
