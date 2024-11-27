@@ -257,6 +257,22 @@ Challenges Faced:
     Problem: The initial layout of the weather display did not scale well on smaller screens.
     Solution: Adjusted the CSS using media queries to ensure proper alignment and readability across all device sizes.
 
+##21/11/24
+Task Completed: 
 
+- Error Handling Page:
+An Error Handling page was created so that when the page generates an error, a window is displayed with a description 
+of the error in addition to adding a test button that creates a custom error and activates the error page.
 
-    
+- React Grafics:
+We create graphs that obtain their data from the backend and the database, as well as displaying them with the data from the last year.
+
+Challenges Faced:
+- Conection between the backend and the grafics part: 
+Problem: Many errors when creating functions in the context, as well as long waiting times 
+when obtaining data from mongo and passing it to the graphics component.
+Solution: Pulling the data with the backend then receive them and use them in the context so the grafs can call the data
+
+-Display of the grafiscs:
+Problem: The grafics were not completely show in the window.
+Solution: Adding in the css an @media so the grafics respond to the window size and make them visible regardless of the size.
