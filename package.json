@@ -2,5 +2,8 @@
   "dependencies": {
     "chart.js": "^4.4.6",
     "react-chartjs-2": "^5.2.0"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
   }
 }

@@ -56,6 +56,33 @@ Their input has been invaluable, and the team’s collaborative spirit is helpin
 
 ##### Final deliverable #####
 
+For this deliverable, my primary focus was on migrating all components from EJS to React components.
+This required not only restructuring the codebase but also ensuring that the separation between backend and frontend was clear and functional. 
+After completing the migration, I successfully connected the backend and frontend to enable seamless data exchange. 
+Additionally, I implemented a simple validation feature to enhance the application’s functionality.
+
+Self-Assessment:
+
+- Tasks Completed:
+  I successfully migrated the entire project’s components from EJS to React. 
+  This transition required a significant restructuring of the codebase and a deep understanding of React's component-based architecture.
+  I ensured a clean separation of concerns by decoupling the backend from the frontend and establishing a reliable connection between the two.
+  To enhance the user experience and ensure data integrity, I added a straightforward validation feature.
+  These changes required careful testing to ensure that the application continued to function smoothly after the migration.
+
+- Personal Reflection:
+  This deliverable was both challenging and rewarding. Migrating to React allowed me to strengthen my understanding of modern frontend frameworks, which was a significant growth opportunity. 
+  While I enjoy backend development more, this experience pushed me to improve my frontend skills and adaptability. 
+  Setting up the validation feature and connecting the backend with the frontend gave me a sense of accomplishment and highlighted the importance of balancing both aspects of web development.
+
+- Performance Evaluation:
+
+  Overall, I believe I performed well in this deliverable. The migration to React was completed successfully, and I managed to establish a clear and functional connection between the backend and frontend without major issues. 
+  My focus on testing and validation ensured the system's reliability. These tasks reinforced my technical skills, particularly in integrating modern frameworks into existing projects.
+
+Reflection on Teammates’ Work: My teammates were fantastic throughout this process. Everyone contributed meaningfully, particularly with tasks that required collaboration or problem-solving. 
+Their strengths in different areas complemented my work, making it easier to overcome challenges. The team’s cohesive efforts ensured that the project progressed smoothly, and their support on frontend tasks was particularly helpful.
+
 
 #Personal log Martin Garcia
 
