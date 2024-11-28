@@ -9,6 +9,6 @@
 body {
   width: 100%;
   margin: 0;
-  background-color: #20475f;
-  color: white;
+  background-color: rgba(30, 37, 44);
+  color: #d9f0ff;
 }

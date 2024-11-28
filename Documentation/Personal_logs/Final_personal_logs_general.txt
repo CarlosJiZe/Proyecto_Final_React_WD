@@ -84,6 +84,9 @@ Reflection on Teammates’ Work: My teammates were fantastic throughout this pro
 Their strengths in different areas complemented my work, making it easier to overcome challenges. The team’s cohesive efforts ensured that the project progressed smoothly, and their support on frontend tasks was particularly helpful.
 
 
+
+
+
 #Personal log Martin Garcia
 
 During this deliverable I was focused in checking the progress of the page and
@@ -156,6 +159,9 @@ to ensure the page continued to look good,
 since there were no problems beyond bugs or compilation errors.
 
 
+
+
+
  #Pesonal log: Andres Gonzalez Gomez
 
 My main focus during this face of the project was visual design and usage of color. Since 
@@ -206,4 +212,33 @@ Reflection on Teammates' Work: My team's performance is outstanding. They are al
 to work as much as the assigned delivery asks us to. They have a lot of knowledge and 
 experience using this methods so their workflow was really smooth and efficient.
 
- ##### Final deliverable #####
+
+ ##### Final Deliverable #####  
+
+For the final deliverable, I focused on ensuring the style and format of the webpage aligned 
+with our original vision while also addressing mobile compatibility issues. My contributions 
+aimed to enhance the overall user experience by refining the visual aspects and addressing 
+technical challenges related to responsive design.  
+
+Self-Assessment:
+
+- Tasks Completed: I made significant styling adjustments to ensure a cohesive design throughout 
+the page, paying close attention to the color scheme and implementing effects for newly added 
+elements. Additionally, I worked on resolving compatibility problems, particularly with the 
+React app's navbar style and colors, which were inconsistent on certain devices. These changes 
+helped improve the usability and visual appeal of the site across different platforms.
+
+- Personal Reflection: Although my contributions didn't result in a substantial improvement 
+compared to previous deliveries, I made an effort to ensure my work didn’t interfere with the 
+backend progress made by my teammates. My goal was to maintain a consistent workflow within the 
+team while focusing on details that could enhance the project aesthetically.
+
+- Performance Evaluation: My performance remained steady, though I acknowledge that I could 
+have done more. I focused on areas where I felt I could contribute most effectively without 
+disrupting the backend integration. While I didn’t achieve significant breakthroughs, I aimed 
+to support the team by handling styling and compatibility issues.
+
+Reflection on Teammates' Work: My teammates continued to deliver exceptional work, ensuring 
+smooth integration of all the necessary functionalities. Their technical expertise in React 
+and MongoDB made the project robust and well-structured. Collaborating with such a skilled 
+team motivated me to contribute in ways that complemented their efforts.  

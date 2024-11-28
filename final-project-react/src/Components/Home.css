@@ -75,7 +75,7 @@ figure img{
   
   .carousel-caption {
     color: white; /* Color del texto */
-    background-color: rgba(33, 37, 41, 0.8); /* Fondo semi-transparente */
+    background-color: rgba(32, 71, 95, 0.8);  /* Fondo semi-transparente */
     padding: 10px; /* Espaciado interno */
     border-radius: 5px; /* Bordes redondeados */
     position: absolute; /* Posicionamiento absoluto */

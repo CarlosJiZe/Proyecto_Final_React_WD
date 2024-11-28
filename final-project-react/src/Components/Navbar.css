@@ -1,0 +1,84 @@
+.navbar {
+    background-color: #20475f;
+    border-bottom: 1px solid #163748;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: 'Merriweather', serif;
+    padding: 0.75rem 1rem;
+    transition: background-color 0.3s ease;
+}
+
+/* Logo */
+.logo {
+    height: 50px;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+/* Menu */
+.navbar-nav .nav-link {
+    color: #163748;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 8px 16px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: rgb(2, 129, 2);
+}
+
+/* Drop down menu */
+.dropdown-menu {
+    background-color: #163748;
+    border: 1px solid #1b4c63; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    padding: 10px 0;
+}
+
+.dropdown-item {
+    color: #ffffff; 
+    font-size: 0.95rem;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-item:hover {
+    background-color: rgba(167, 212, 229, 0.8); 
+    color: #051118; 
+}
+
+
+/* Button */
+.navbar-toggler {
+    border: none;
+    padding: 6px 10px;
+    outline: none;
+    background-color: #a7d4e5; 
+    border-radius: 5px; 
+    transition: background-color 0.3s ease;
+}
+
+.navbar-toggler:hover {
+    background-color: #87bfcf; 
+}
+
+.navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"%3E%3Cpath stroke="rgba(255, 255, 255, 0.7)" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
+}
+
+/* Movile comp */
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .nav-link {
+        padding: 10px;
+        font-size: 1.1rem; 
+    }
+}

@@ -1,11 +1,11 @@
-
 .grafica-section {
     display: flex;
-    flex-direction: column; /* Apila las gráficas verticalmente */
-    gap: 20px; /* Espacio entre las gráficas */
+    flex-direction: column;
+    gap: 20px;
     padding: 20px;
     color: black;
-    align-items: center; /* Centrar gráficas horizontalmente */
+    align-items: center;
+    width: 100%; /* Asegurar que ocupe todo el ancho */
 }
 
 .chart-container {
@@ -13,28 +13,34 @@
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    height: fit-content;
-    width: fit-content;
-    text-align: center;
+    width: 100%; /* Cambiar de fit-content a 100% */
+    max-width: 100%; /* Añadir máximo ancho */
+    box-sizing: border-box; /* Incluir padding y border en el ancho total */
+    overflow-x: auto; /* Añadir scroll horizontal si es necesario */
 }
 
 .chart-container h3 {
     font-size: 1.5rem;
     margin-bottom: 20px;
+    word-wrap: break-word; /* Romper palabras largas */
+    overflow-wrap: break-word; /* Alternativa para mejor compatibilidad */
 }
 
 /* Estilos para pantallas pequeñas */
 @media (max-width: 600px) {
     .grafica-section {
-        padding: 10px;
+        padding: 5px;
+        gap: 10px; /* Reducir espacio entre gráficas */
     }
 
     .chart-container {
-        padding: 15px; /* Reducir padding en pantallas pequeñas */
+        padding: 10px;
+        margin: 0 5px; /* Añadir un pequeño margen */
     }
 
     .chart-container h3 {
-        font-size: 1.2rem; /* Reducir tamaño de texto en pantallas pequeñas */
+        font-size: 1rem;
+        margin-bottom: 10px;
     }
 }
 
@@ -42,6 +48,7 @@
 @media (min-width: 600px) and (max-width: 900px) {
     .grafica-section {
         padding: 15px;
+        gap: 15px;
     }
 
     .chart-container {
@@ -57,10 +64,12 @@
 @media (min-width: 900px) {
     .grafica-section {
         padding: 20px;
+        gap: 20px;
     }
 
     .chart-container {
-        padding: 25px; /* Más espacio en pantallas grandes */
+        padding: 25px;
+        max-width: 900px; /* Limitar ancho máximo en pantallas grandes */
     }
 
     .chart-container h3 {

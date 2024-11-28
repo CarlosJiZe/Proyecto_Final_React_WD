@@ -4,7 +4,7 @@
     font-family: 'Arial', sans-serif;
     text-align: center;
     color: black;
-    background-color: green;
+    background-color: rgb(2, 129, 2);
     border-radius: 5%;
     padding: 20px;/* Añadido para darle un tamaño al contenedor */
     margin: 0 auto; /* Centrado el contenedor en la página */

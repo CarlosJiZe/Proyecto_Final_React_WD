@@ -276,3 +276,13 @@ Solution: Pulling the data with the backend then receive them and use them in th
 -Display of the grafiscs:
 Problem: The grafics were not completely show in the window.
 Solution: Adding in the css an @media so the grafics respond to the window size and make them visible regardless of the size.
+
+#27/11/24
+Task Completed:
+
+- Styling:
+Final styling changes and coherence to the full page. Various color scheme modifications and effect implementaions to the new elements added this delivery.
+
+Challenges Faced:
+- Compatibility:
+Compatibility problems with the react app, specifically with the navbar style and colors in certain areas.

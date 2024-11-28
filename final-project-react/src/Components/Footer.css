@@ -1,5 +1,5 @@
 .footer-container {
-    background-color: #20475f; /* Color de fondo */
+  background-color: rgba(30, 37, 44, 0.8);/* Color de fondo */
     color: #d9f0ff; /* Color del texto */
     padding: 0 20px 20px; /* Espaciado superior e inferior */
   }

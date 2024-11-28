@@ -1,17 +1,18 @@
 .table-responsive {
     overflow-x: auto;
-    white-space: nowrap; /* Evita que las celdas se rompan en varias líneas */
+    white-space: nowrap; 
 }
 
 .table {
     width: 100%;
-    table-layout: auto; /* Ajuste de la tabla según el contenido */
+    table-layout: auto; 
     border-collapse: collapse;
 }
 
 .table th, .table td {
     padding: 8px;
     text-align: left;
+    font-family: 'Pacifico', serif;
     border: 1px solid #ddd;
 }
 
@@ -24,30 +25,47 @@
     color: red;
 }
 
+/* Button */
 .btn-circle {
     z-index: 100;
-    position: fixed; /* Fija el botón en la pantalla */
-    bottom: 20px; /* 20px desde el borde inferior */
-    right: 20px; /* 20px desde el borde izquierdo */
-    width: 70px; /* Tamaño del botón */
-    height: 70px; /* Tamaño del botón */
-    padding: 0; /* Elimina el padding */
-    border-radius: 50%; /* Hace el botón circular */
+    position: fixed; 
+    bottom: 20px; 
+    right: 20px; 
+    width: 70px; 
+    height: 70px; 
+    padding: 0; 
+    border-radius: 50%; 
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 30px; /* Tamaño del ícono */
-    border: none; /* Elimina el borde */
-    background-color: #007bff; /* Color azul de fondo */
-    color: white; /* Color blanco para el ícono */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra sutil */
-    transition: background-color 0.3s ease;
-  }
-  
-  .btn-circle:hover {
-    background-color: #0056b3; /* Color de fondo cuando el mouse pasa por encima */
-  }
-  
-  .fas {
-    color: white; /* Color blanco para el ícono */
-  }
+    font-size: 30px; 
+    border: 2px solid #e0e0e0; 
+    background-color: #20475f; 
+    color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); 
+    transition: all 0.3s ease-in-out; 
+}
+
+.btn-circle:hover {
+    background-color: rgba(30, 37, 44); 
+    color: #a7d4e5; 
+    border-color: #cccccc; 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-2px); 
+}
+
+.btn-circle:focus {
+    outline: none;
+    border-color: rgb(2, 129, 2);
+    box-shadow: 0 0 8px rgb(2, 129, 2, 0.4);
+}
+
+/* Button Icon */
+.fas {
+    color: #ffffff;
+    transition: color 0.3s ease-in-out;
+}
+
+.fas:hover {
+    color: #a7d4e5;
+}
