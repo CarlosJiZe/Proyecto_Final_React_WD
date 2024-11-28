@@ -23,9 +23,25 @@ class ErrorBoundary extends React.Component {
       // Mostrar mensaje de error
       return (
         <div className="error-boundary-container">
+        <a href="/"><svg 
+            xmlns="http://www.w3.org/2000/svg" 
+            width="24" 
+            height="24" 
+            viewBox="0 0 24 24" 
+            fill="none" 
+            stroke="currentColor" 
+            strokeWidth="2" 
+            strokeLinecap="round" 
+            strokeLinejoin="round"
+            className="mr-2"
+          >
+            <path d="M9 14l-5-5 5-5"/>
+            <path d="M4 9h11a4 4 0 1 1 0 8h-4"/>
+          </svg>Volver a la pagina principal</a>
+        <br/>
           <h2>¡Ups! Algo salió mal.</h2>
           <details className="error-boundary-details">
-            <summary>Error Detalles</summary>
+            <summary>Detalles del Error</summary>
             {this.state.error && this.state.error.toString()}
             <br />
             {this.state.errorInfo?.componentStack}
